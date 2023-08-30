@@ -1,0 +1,404 @@
+*{
+    margin: 0;padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+
+}
+::-webkit-scrollbar{
+    background: linear-gradient(yellow,green,blue,pink);
+    width: 3px ;
+}
+::-webkit-input-placeholder{
+    border: none;
+
+}
+::-webkit-scrollbar-thumb{
+    background: black;
+}
+.main-container{
+    max-width: 3000px;
+    margin: 0 auto;
+    display: flex;
+    height: fit-content;
+    justify-content: space-evenly;
+
+
+}
+.wraper-btn{
+    background: #000;
+    color: white;
+    top: 33px;
+    left: 12px;
+    position: fixed;
+    padding: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    display: none;
+    font-size: 1rem;
+    z-index: 13;
+}
+.wraper{
+   width: 300px;
+   background: repeating-linear-gradient(gray,rgb(163, 163, 163));
+   height: 100vh;
+   position: sticky;
+   top: 0;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   transition: .6s;
+}
+.wraper a{
+    color: rgb(210, 210, 210);
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4rem;
+    padding: 16px 0;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+   
+   
+
+}
+.wraper a span{
+    width: 0;
+    height: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .4s;
+}
+.wraper a:hover span{
+    width: 100%;
+}
+
+.wraper h3{
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: lightgray;
+}
+.left-container{
+     width:100% ;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     color: black;
+     flex-direction: column;
+}
+.container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+.container-text{
+    height: 40%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.container-text h3{
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.container-text h4{
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.container-text p{
+    font-size: 1.4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 18px 0;
+}
+.home-photo{
+               overflow: hidden; 
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 100%;
+               width: 40%;
+               height: 100%;
+
+
+}
+.home-photo img{
+    height: 144px;
+    border-radius: 100%;
+    scale: 400%;
+
+
+}
+.about{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.228);
+}
+.about-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about-text h1{
+    font-size: 3rem;
+}
+.info{
+    width: 80%;
+}
+.info h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.skills{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+.skills h1{
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.skills-info{
+    width: 80%;
+    height: 60%;
+    border: 2px solid transparent;
+    border-left: px solid black;
+    border-bottom: 12px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.col{
+    height: 100%;
+    width: 66px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    flex-direction:column;
+}
+.col1{
+}
+.col2{
+   height: 80%;
+}
+.col3{
+  height: 60%;
+}
+
+
+.contact{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact-info{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    
+
+}
+.contact-info h2{
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 33px 0;
+
+
+}
+.btns{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+   
+
+}
+.btns a{
+    background: transparent;
+    color: black;
+    text-decoration: none;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    padding: 18px 9;
+    margin: 4px 8px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    position: relative;
+    border: 2px solid black;
+    transition: color 0.7s;
+    z-index: 1;
+}
+.btns a span{
+    position: absolute;
+    width: 0%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: black;
+    border: 3px solid black;
+    transition:  0.7s ;
+    z-index: -1;
+    overflow: hidden;
+}
+.btns a:hover span{
+    width: 100%;
+
+    
+    
+}
+.btns a:hover{
+     color: wheat;
+}
+.social{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-text{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.s-text{
+      padding: 8px 0;
+}
+.s-text h1{
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}
+.links{
+    display: flex;
+    padding: 9px 0;
+}
+.links a{
+    padding: 0 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.brands{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.brand-txt{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
+
+}
+.brand-txt h1{
+    font-size: 3rem;
+}
+.brand-txt p{
+    font-size: 1.6rem;
+}
+.nav-slider{
+    background: gray;
+    color: rgb(196, 196, 196);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 300px;
+    transition: .6s;
+    
+}
+.nav-slider ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+
+}
+.nav-slider a{
+    color: rgb(231, 231, 231);
+    text-decoration: none;
+    padding: 33px 0;
+    font-size: 1.4rem;
+    font-family: 'Courier New', Courier, monospace;
+    
+
+
+
+}
+.nav-slider ul a:hover{
+    color: lightblue;
+    font-weight: lighter;
+}
+.nbtn{
+    color: rgb(171, 166, 166);
+    position: fixed;
+    top: 22px;
+    right: 12px;
+}
+.nbtn p{
+    padding: 18px;
+    font-weight: bold;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    font-size: 2rem;
+
+}
+
+
